@@ -1,0 +1,19 @@
+// here are some resets and global styles
+
+*{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+ }
+
+body{
+    padding: 0;
+    margin: 0;
+    font-family:var(--base-font);
+    background-color: #ffffff;
+}
