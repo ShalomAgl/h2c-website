@@ -1,0 +1,52 @@
+@use '../util' as *;
+@use '../globals' as *;
+
+
+.footer{
+    border-top: 2px dashed #333;
+    width: 100%;
+    background-color: var(--white);
+    text-decoration: none;
+}
+
+.footer-container{
+    max-width: rem(1100);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: rem(18);
+    padding: rem(50) 0 0;
+}
+
+.footer-block{
+    flex-basis: 20%;
+    margin: 0 rem(30);
+    color: #333333;
+}
+
+.block-list{
+    padding-left: 0;
+}
+
+.block-title{
+    font-size: rem(20);
+}
+
+.block-list__item{
+    padding: rem(5) 0;
+}
+
+.block-list.media{
+    display: flex;
+}
+
+.block-list.media .block-list__item{
+    padding-right: rem(15);
+    font-size: rem(25);
+    transition: all .3s ease;
+}
+
+.block-list.media .block-list__item:hover{
+    transform: scale(1.15);
+}

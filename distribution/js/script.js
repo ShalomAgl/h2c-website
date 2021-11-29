@@ -1,0 +1,2 @@
+const hamburger=document.querySelector("#hamburger"),navMenu=document.querySelector("#navMenu"),navLink=document.querySelectorAll(".item__link");hamburger.addEventListener("click",(()=>{hamburger.classList.toggle("menu--is-active"),navMenu.classList.toggle("menu--is-active")})),navLink.forEach((e=>e.addEventListener("click",(()=>{hamburger.classList.remove("menu--is-active"),navMenu.classList.remove("menu--is-active")}))));
+//# sourceMappingURL=script.js.map
