@@ -1,0 +1,88 @@
+@use '../util' as *;
+@use '../globals' as *;
+
+.section-presentation{
+    height: 90vh;
+    margin-top: 70px;
+    background-color: var(--light-blue);
+}
+
+
+.presentation-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.presentation__left{
+    width: 50%;
+    height: 100%;
+    background-color: var(--beige);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentation__right{
+    width: 50%;
+    height: 100%;
+}
+
+
+/*------------------------------------------------------------------------
+* LEFT PART STARTS
+--------------------------------------------------------------------------*/
+.presentation__header,
+.presentation__body{
+    width: 85%;
+}
+
+
+.presentation__header{
+    font-size: rem(45);
+    font-weight: 700;
+    margin-top: rem(30);
+}
+
+
+.presentation__body{
+    font-size: rem(25);
+    margin-bottom: rem(30);
+}
+
+
+.presentation-cta__button{
+    border: none;
+    border-radius: rem(7);
+    padding: rem(10) rem(15);
+    cursor: pointer;
+    transition: all .3s;
+    font-weight: 600;
+}
+
+.presentation-cta__button:hover{
+    transform: scale(1.1);
+}
+
+
+/*------------------------------------------------------------------------
+* LEFT PART ENDS
+--------------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------------
+* LEFT PART STARTS
+--------------------------------------------------------------------------*/
+
+.presentation__right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*------------------------------------------------------------------------
+* LEFT PART ENDS
+--------------------------------------------------------------------------*/
+
+
+
