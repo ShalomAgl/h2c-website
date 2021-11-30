@@ -43,7 +43,7 @@
 }
 
 .menu__item{
-    margin: 0 rem(50);
+    margin: 0 rem(35);
 }
 
 .item__link{
@@ -55,11 +55,11 @@
 }
 
 /* ====> hover effect -> underlined links */
-.item__link:hover{
+.item__link.underlined:hover{
     color: var(--violet-hocarre);
 }
 
-.item__link::before{
+.item__link.underlined::before{
     content: "";
     position: absolute;
     bottom: 0;
@@ -72,17 +72,54 @@
     transition: transform 0.4s ease;
 }
 
-.item__link:hover::before{
+.item__link.underlined:hover::before{
     transform: scaleX(1);
 }
 
+/* ====> signUp CTA button*/
+
+.menu__item.signUp{
+    background-image: linear-gradient(to right, #9D50BB 10%, var(--violet-hocarre) 50%, #9D50BB  100%);
+    background-size: 200% auto;
+    border-radius: 10px;
+    padding: 5px 25px;
+    transition: .5s;
+}
+
+.menu__item.signUp:hover{
+    background-position: right center;
+}
+
+.menu__item.signUp .item__link{
+    color: var(--white);
+}
 
 
+         .btn-grad {background-image: linear-gradient(to right, #6a3093 0%, #a044ff  51%, #6a3093  100%)}
+         .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
 
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
 
 /* ------------------------------------
 *GLOBAL NAVBAR ENDS
 --------------------------------  */
+
 
 /*--------------------------------
 *HAMBURGER MENU STARTS
@@ -105,11 +142,10 @@
     background-color: var(--violet-hocarre);
 }
 
-
-
 /*----------------------------------
 *HAMBURGER MENU ENDS
 -----------------------------------  */
+
 
 
 /*----------------------------------
@@ -125,7 +161,7 @@
     .menu__list{
         position: fixed;
         left: -1000%;
-        top: rem(64);
+        top: rem(55);
         flex-direction: column;
         width: 100%;
         border-radius: rem(10);
