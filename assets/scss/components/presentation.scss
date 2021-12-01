@@ -2,9 +2,10 @@
 @use '../globals' as *;
 
 .section-presentation{
-    height: 90vh;
+    height: 100vh;
     margin-top: 70px;
-    background-color: var(--light-blue);
+    background-color: var(--beige);
+    color: var(--violet-hocarre);
 }
 
 
@@ -14,27 +15,25 @@
     display: flex;
 }
 
-.presentation__left{
-    width: 50%;
-    height: 100%;
-    background-color: var(--beige);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.presentation__right{
-    width: 50%;
-    height: 100%;
-}
 
 
 /*------------------------------------------------------------------------
 * LEFT PART STARTS
 --------------------------------------------------------------------------*/
+
+.presentation__left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .presentation__header,
-.presentation__body{
-    width: 85%;
+.presentation__body,
+.presentation-cta{
+    width: 80%;
 }
 
 
@@ -44,26 +43,33 @@
     margin-top: rem(30);
 }
 
+.presentation-title,
+.presentation-text{
+    margin: rem(15) 0 rem(15) rem(30);
+}
+
+
+
 
 .presentation__body{
-    font-size: rem(25);
+    font-size: rem(23);
     margin-bottom: rem(30);
 }
 
 
+
 .presentation-cta__button{
     border: none;
+    background-color: var(--violet-hocarre);
+    color: #fff;
     border-radius: rem(7);
-    padding: rem(10) rem(15);
-    cursor: pointer;
-    transition: all .3s;
+    padding: rem(10);
     font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    left: 5%;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
 }
-
-.presentation-cta__button:hover{
-    transform: scale(1.1);
-}
-
 
 /*------------------------------------------------------------------------
 * LEFT PART ENDS
@@ -71,18 +77,58 @@
 
 
 /*------------------------------------------------------------------------
-* LEFT PART STARTS
+* RIGHT PART STARTS
 --------------------------------------------------------------------------*/
 
 .presentation__right{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 50%;
+    height: 100%;
 }
 
 /*------------------------------------------------------------------------
-* LEFT PART ENDS
+* RIGHT PART ENDS
 --------------------------------------------------------------------------*/
 
 
+@media screen and (max-width: rem(905)){
 
+    .presentation-container{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+
+    .presentation__left{
+        height: 55%;
+        width: 100vw;
+        justify-content: flex-start;
+    }
+
+    .presentation__right{
+        height: 45%;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .presentation__right img{
+        height: 80%;
+        width: 80%;
+    }
+
+    .presentation__header{
+        font-size: rem(30);
+        width: 70%;
+    }
+
+    .presentation__body{
+        font-size: rem(18);
+        width: 70%;
+    }
+
+    .presentation-cta__button{
+        left: 10%;
+    }
+
+}
