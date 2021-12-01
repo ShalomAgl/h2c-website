@@ -78,42 +78,31 @@
 
 /* ====> signUp CTA button*/
 
-.menu__item.signUp{
-    background-image: linear-gradient(to right, #9D50BB 10%, var(--violet-hocarre) 50%, #9D50BB  100%);
-    background-size: 200% auto;
-    border-radius: 10px;
-    padding: 5px 25px;
-    transition: .5s;
+button{
+    outline: 0;
+    position: relative;
+    overflow: hidden;
+    transition: background 400ms;
 }
 
-.menu__item.signUp:hover{
-    background-position: right center;
+.sign-up-btn{
+    border: rem(3) solid var(--violet-hocarre);
+    color: var(--violet-hocarre);
+    background-color: transparent;
+    border-radius: rem(5);
+    padding: rem(5) rem(25);
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
+    font-weight: 700 ;
+    cursor: pointer;
 }
 
-.menu__item.signUp .item__link{
+.sign-up-btn:hover{
+    transition: .3s ease-out;
+    background-color: var(--violet-hocarre) ;
     color: var(--white);
 }
 
 
-         .btn-grad {background-image: linear-gradient(to right, #6a3093 0%, #a044ff  51%, #6a3093  100%)}
-         .btn-grad {
-            margin: 10px;
-            padding: 15px 45px;
-            text-align: center;
-            text-transform: uppercase;
-            transition: 0.5s;
-            background-size: 200% auto;
-            color: white;            
-            box-shadow: 0 0 20px #eee;
-            border-radius: 10px;
-            display: block;
-          }
-
-          .btn-grad:hover {
-            background-position: right center; /* change the direction of the change here */
-            color: #fff;
-            text-decoration: none;
-          }
          
 
 /* ------------------------------------
