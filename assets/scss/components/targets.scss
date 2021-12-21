@@ -1,0 +1,79 @@
+@use '../util' as *;
+@use '../globals' as *;
+
+.section-targets{
+    height: 100vh;
+    width: 100%;
+    background-color: var(--target-section);
+    display: grid;
+    // place-content: center;
+}
+
+.section-target_header {
+
+    width: 100%;
+    max-height: 15%;
+
+    & > h1{
+        margin: 0;
+        font-size: calc(1.1rem + 2vw);
+        text-align: center;
+        // position: relative;
+        // top: rem(0);
+        letter-spacing: 1.2;
+        color: #fff;
+    }
+}
+
+
+.section-target_body{
+    max-height: 85%;
+    margin-top: 30px;
+    width: 80%;
+    display: flex;
+    gap: 10px;
+    // justify-content: center;
+}
+
+.targets_leftPart{
+    width: 40%;
+    display: grid;
+    place-content: center;
+
+    & > img {
+        width: 300px;
+    }
+}
+
+.targets_rightPart{
+    width: 60%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    & > .target-grid{
+        max-height: 60px;
+        display: flex;
+        margin: 10px 0;
+        width: 100%;
+        font-size: calc(.690rem + .2vw);
+
+        & > .target-side-img{
+            width: 95px;
+        }
+    }
+}
+
+.target-text{
+    
+    display: grid;
+    place-content: center;
+    line-height: 1.3;
+    & > ul{
+        padding-left: 0;
+        list-style-type: disc;
+        margin-top: 0;
+    }
+
+
+}
