@@ -1,0 +1,88 @@
+@use '../globals' as *;
+@use '../util' as *;
+
+
+
+.section-features{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+@media screen and (min-width: 980px ){
+    .features_bottom{
+        margin-top: rem(60);
+        display: flex;
+    }
+
+    .features-box{
+        width: 20%;
+    }
+
+    .section-features{
+        height: 95vh;
+    }
+
+    .f-box-title{
+        font-size: calc(.9rem + .4vw);
+    }
+
+    .features-box img{
+        width: rem(80); 
+    }
+
+    .f-box-text{
+        font-size: .825rem;
+        width: 75%;
+    }
+
+    .features_text{
+        display: grid;
+        place-items: center;
+    }
+
+    .features_text p{
+        width: 60%;
+    }
+}
+
+.features_title{
+    color: var(--light-blue);
+    font-size: calc(1.1rem + .525vw);
+}
+
+.features_top{
+    display: grid;
+    place-items: center;
+}
+
+.features-box{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+}
+
+
+
+.f-box-title{
+    color: var(--light-blue);
+    font-weight: bold;
+    font-size: calc(.8rem + .6vw);
+    margin: 10px;
+}
+
+.f-box-text,
+.features_title,
+.features_text{
+    text-align: center;
+}
+
+.features_text{
+    font-size: calc(.5rem + .6vw);
+    width: 75%;
+}
+
+.features-box img{
+    width: rem(100); 
+}
