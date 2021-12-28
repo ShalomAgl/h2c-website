@@ -17,7 +17,7 @@
 }
 
 .hero_title{
-    color: var(--violet-hocarre);
+    color: var(--light-blue);
     font-size: calc(1.125rem + 1.1vw);
     text-align: center;
     line-height: 1.3;
@@ -57,38 +57,7 @@
 }
 
 
-.line-up{
-    animation: 2s animate-lineUp ease-out;
-}
 
-
-@keyframes animate-lineUp {
-    0% {
-        opacity: 0;
-        transform: translateY(100%);
-    }
-    20% {
-        opacity: 0;
-    }
-    50% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-
-// .line-up:nth-of-type(1){
-//     animation-delay: 0.5s;
-// }
-.line-up:nth-of-type(2){
-    animation-delay: 2s;
-}
-.line-up:nth-of-type(3){
-    animation-delay: 3s;
-}
 
 .invisible{
     opacity: 0;

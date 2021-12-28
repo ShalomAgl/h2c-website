@@ -2,7 +2,7 @@
 @use '../globals' as *;
 
 .section-targets{
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     background-color: var(--target-section);
 }
@@ -14,7 +14,7 @@
 
     & > h1{
         margin: 0;
-        font-size: calc(1.1rem + 1vw);
+        font-size: calc(1.125rem + 1.1vw);
         text-align: center;
         position: relative;
         top: rem(20);
@@ -24,8 +24,9 @@
 }
 
 
+
+
 .section-target_body{
-    // max-height: 90%;
     margin-top: 30px;
     width: 90%;
     display: flex;
