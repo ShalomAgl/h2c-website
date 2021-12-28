@@ -58,3 +58,39 @@ function createRipple(event) {
 *RIPPLE EFFECT ENDS
 -----------------------------------  */
 
+
+/*----------------------------------
+SHOW ON SCROLL EFFECT STARTS
+-----------------------------------  */
+
+const threshold = .1
+const options = {
+  root: null,
+  rootMargin: '0px',
+  threshold
+}
+
+const handleIntersect = function (entries, observer) {
+  entries.forEach(function (entry) {
+    if (entry.intersectionRatio > threshold) {
+      entry.target.classList.remove('invisible')
+      observer.unobserve(entry.target)
+    }
+  })
+}
+
+document.documentElement.classList.add('invisible-loaded')
+
+window.addEventListener("DOMContentLoaded", function () {
+  const observer = new IntersectionObserver(handleIntersect, options)
+  const targets = document.querySelectorAll('.invisible')
+  targets.forEach(function (target) {
+    observer.observe(target)
+  })
+})
+/*----------------------------------
+SHOW ON SCROLL EFFECT ENDS
+-----------------------------------  */
+
+
+
