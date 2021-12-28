@@ -64,6 +64,11 @@
 
 .block-list__item{
     padding: rem(6) 0;
+    transition: .3s;
+
+    &:hover{
+        transform: scale(1.0625);
+    }
 }
 
 .block-list.media{
@@ -86,6 +91,8 @@
 
 .block-list__item > a{
     color: rgba(51, 51, 51, 0.911);
+
+    
 }
 
 /* ===> RESPONSIVE*/
