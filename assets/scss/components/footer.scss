@@ -67,7 +67,7 @@
     transition: .3s;
 
     &:hover{
-        transform: scale(1.0625);
+        text-decoration: underline ;
     }
 }
 
@@ -82,12 +82,16 @@
 }
 
 .block-list.media .block-list__item > a > i{
-    color: var(--violet-hocarre);
+    color: #000;
 }
 
-.block-list.media .block-list__item:hover{
+.block-list.media .block-list__item > a > i:hover{
+    color: var(--violet-hocarre);
     transform: scale(1.22);
 }
+
+
+
 
 .block-list__item > a{
     color: rgba(51, 51, 51, 0.911);

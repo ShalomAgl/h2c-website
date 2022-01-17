@@ -67,6 +67,12 @@
     position: relative;
     left: 5%;
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+    transition: .25s;
+}
+
+.presentation-cta__button:hover{
+    box-shadow: 0 0.5em 0.5em -0.4em var(--violet-hocarre);
+    transform: translateY(-0.25em);
 }
 
 /*------------------------------------------------------------------------
