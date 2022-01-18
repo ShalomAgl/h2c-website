@@ -32,7 +32,7 @@ a{
 }
 
 /*
-** RIPPLE EFFECT FOR ALL THE BUTTONS
+** RIPPLE EFFECT 
 */  
 span.ripple{
     position: absolute;
@@ -50,9 +50,7 @@ span.ripple{
 }
 
 
-/*
-    FLOATING EFFECT
-*/
+/* ************ FLOATING ANIMATION ********* */
 
 .floating { 
     animation-name: floating;
@@ -68,3 +66,17 @@ span.ripple{
     50%  { transform: translate(0, 20px); }
     100%   { transform: translate(0, -0px); }   
 }
+
+
+/* ************ TYPEWRITER ANIMATION ********* */
+
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 85% }
+  }
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: var(--violet-hocarre); }
+  }

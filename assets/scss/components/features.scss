@@ -2,107 +2,48 @@
 @use '../util' as *;
 
 
-
 .section-features{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-}
-
-@media screen and (min-width: 980px ){
-    .features_bottom{
-        margin-top: rem(60);
-        display: flex;
-    }
-
-    .features-box{
-        width: 20%;
-    }
-
-    .section-features{
-        height: 95vh;
-    }
-
-    .f-box-title{
-        font-size: calc(.9rem + .4vw);
-    }
-
-    .features-box img{
-        width: rem(80); 
-    }
-
-    .f-box-text{
-        font-size: .825rem;
-        width: 75%;
-    }
-
-    .features_text{
-        display: grid;
-        place-items: center;
-    }
-
-    .features_text p{
-        width: 60%;
-    }
+    background-color: rgba(255, 228, 196, 0.432);
+    padding: 10px 0;
 }
 
 .features_title{
-    color: var(--light-blue);
-    font-size: calc(1.125rem + 1.1vw);
+    text-align: center;
+    color: rgb(23,64,94);
+    font-size: calc(0.75em + 1.3vmax);
 }
 
-.features_top{
-    display: grid;
-    place-items: center;
+.features_bottom{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .features-box{
-    display: flex;
-    flex-direction: column;
-    place-items: center;
-}
-
-
-
-.f-box-title{
-    color: var(--light-blue);
-    font-weight: bold;
-    font-size: calc(.8rem + .6vw);
+    border: 1px solid black;
+    width: calc(23% + 5px);
     margin: 10px;
+    border-radius: 7px;
+    display: grid;
+    place-items: center;
+    box-shadow: 2px -8px 36px -12px rgb(0, 0, 0, .48);
 }
 
-.f-box-text,
-.features_title,
-.features_text{
-    text-align: center;
+.box-top { 
+
+    display: flex;
+    align-items: center;
+
+    & img{
+        width: rem(90);
+    }
+
+    & .box-title{
+        margin: 0;
+        padding: 0;
+        font-size: 1.4em;
+        color: var(--light-blue);
+    }
 }
-
-.features_text{
-    font-size: calc(.5rem + .6vw);
-    width: 75%;
-}
-
-.features-box img{
-    width: rem(100); 
-}
-
-.features_title.typewriter{
-    width: 90%;
-    overflow: hidden;
-    border-right: .1em solid transparent;
-    white-space: nowrap;
-    letter-spacing: .1em;
-    animation: typing 3s steps(40, end),
-    blink-caret .8s step-end 8;
-}
-
-@keyframes typing {
-    from { width: 0 }
-    to { width: 85% }
-  }
-
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: var(--violet-hocarre); }
-  }
