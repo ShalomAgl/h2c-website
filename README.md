@@ -7,3 +7,16 @@ CSS3
 Javascript
 
 
+#How to use the gulJS workflow
+
+Install: 
+
+In your main project folder: 
+
+`npm install gulp cssnano browser-sync gulp-postcss gulp-terser gulp-sass --save-dev`
+
+Before starting to code just type `gulp`in the terminal
+
+Now you can start working with the gulp workflow !
+
+

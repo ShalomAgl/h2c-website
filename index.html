@@ -12,8 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <!-- fonts loaded with the preconnect attribute from google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <!-- css styles -->
     <link rel="stylesheet" href="./distribution/css/style.css">
     <!-- Start of HubSpot Embed Code -->
@@ -45,7 +46,9 @@
                         <a style="white-space: nowrap;" class="item__link underlined" href="#"> Se connecter</a>
                     </li>
                     <li class="menu__item signUp">
-                        <button class="sign-up-btn" role="button">S'inscrire</button>
+                        <a href="https://app.hocarre.com/fr/register">
+                            <button class="sign-up-btn" role="button">S'inscire</button>
+                        </a>
                     </li>
                 </ul>
                 
@@ -67,8 +70,8 @@
             <div class="presentation-container ">
                 <div class="presentation__left ">
                     <div class="presentation__header">
-                        <p class="presentation-title line-up">
-                            L'approvisionnement simple en circuit court
+                        <p class="presentation-title line-up gradient-text">
+                            L'approvisionnement simple en circuit court.
                         </p>
                     </div>
                     <div class="presentation__body">
@@ -84,141 +87,158 @@
                 </div>
 
                 <div class="presentation__right">
-                    <img src="/assets/images/logos/logoHocarreSlogan.svg" width="350px" height="350px" alt="">
+                    <img src="./assets/images/logos/logoHocarreSlogan.svg" width="350px" height="350px" alt="">
                 </div>
             </div>
         </section>
         <!-- PRESENTATION ENDS -->
 
         <!-- HERO STARTS -->
-        <section class="section-hero">
-            <div class="hero_title floating">
-                <h1>Découvrez notre plateforme !</h1>
-            </div>
+
+        <section class="hero">
             
-            <div class="hero_bottom">
+            <div class="hero_container">
+                <div class="image_hero_A">
+                    <img src="./assets/images/hero_section/woman.svg" alt="" class="hero-img-A">
                 
-                <div class="hero-row ">
-                    <div class="hero-box --is-image">
-                        <img src="./assets/images/hero_section/Woman.svg" alt="">
-                    </div>
-                    <div class="hero-box --is-text ">
-                        <p><strong>Vos produits locaux disponibles en quelques clics</strong></p>
-                        <p >
-                            Tous vos prestataires et fournisseurs réunis sur une seule et même plateforme. Gagnez de la visibilité et simplifiez vos échanges avec d'autres professionnels du secteur.</p>
-                    </div>
                 </div>
-               
-            
-            
-                <div class="hero-row ">
-                    <div class="hero-box --is-text ">
-                        <p><strong>Accédez en temps réel à un riche catalogue de producteur</strong></p>
-                        <p>
-                            Ne perdez plus de temps à contacter chaque producteur, à la recherche de produits de qualité ou à faire de la prospection pour vendre vos produits à des professionnels. Trouvez tous les produits qu'il vous faut, en une seule commande et gagnez ainsi du temps sur la gestion de votre logistique.</p>
-                    </div>
-                    <div class="hero-box --is-image">
-                        <img src="./assets/images/hero_section/Boy.svg" alt="">
-                    </div>
+                <div class="text_hero">
+
+                    <h3 class="text_header">
+                        Vous êtes commerçants?
+                    </h3>
+    
+                    <p class="main_text">
+Trouver des produits locaux n’a jamais été aussi efficace et rapide qu’avec Ho’Carré ! Commandez facilement en une fois une multitude de produits en direct des producteurs. Fini la paperasse et gérez simplement le paiement.                    
+                    </p>
+    
+                    <a href="">
+                        <button class="hero-button arrow">En savoir plus</button>
+                    </a>
+    
                 </div>
-               
-            
-            
-                <div class="hero-row">
-                    <div class="hero-box --is-image">
-                        <img src="./assets/images/hero_section/Woman.svg" alt="">
-                    </div>
-                    <div class="hero-box --is-text ">
-                        <p><strong>
-                            Gagnez du temps et concentrez-vous sur votre activité
-                        </strong></p>
-                        <p>
-Prise de commande, facturation, gestion des requêtes... Toute votre activité réunie sur une seule et même plateforme.
-En moyenne, c'est jusqu’à 10 heures par semaine que vous pourrez consacrer à une autre tâche, grâce à notre solution numérique.
-                        </p>
-                    </div>
-                </div>
+    
+    
             </div>
-               
-            
+ 
+
         </section>
 
+        <!-- ******************************************************************************************* -->
 
+        <section class="hero">
+
+            <div class="hero_container">
+                <div class="text_hero">
+
+                    <h3 class="text_header">
+                        Vous êtes producteurs?
+                    </h3>
+    
+                    <p class="main_text">
+                        Grace à Ho’Carré, vendez en direct et rapidement à des professionnels ! Oubliez les démarches administratives, concentrez vous sur votre savoir-faire. Gérez ses stocks, prix et factures n’a jamais été aussi simple.
+                    </p>
+    
+                    <a href="">
+                        <button class="hero-button arrow"> 
+                            En savoir plus
+                        </button>
+                    </a>
+    
+                </div>
+    
+                <div class="image_hero_A">
+                    <img src="./assets/images/hero_section/Boy.svg" alt="" class="hero-img-A">
+    
+                </div>
+    
+            </div>
+        </section>
         <!-- HERO ENDS  -->
+
+        
 
         <!-- FEATURES STARTS -->
         <section class="section-features">
 
             <div class="features_top">
-                <div class="features_title floating">
-                    <h1>Une plateforme fonctionnelle</h1>
-                </div>
-                <div class="features_text">
-                    <p>La charge de travail administratif est souvent <strong>
-                        fastidieuse et peu pratique
-                    </strong>.
-                    La rationalisation des commandes, la gestion des paiements et de la facturation
-                    automatisée permet de <strong>gagner du temps</strong>.</p>
-                    <p>L’apport d’une solution numérique à vocation de <strong>faciliter</strong> tout ce processus
-                    et de découvrir un large panel de <strong>produits locaux</strong>.</p>
-                </div>
+                <h1 class="features_title" > Acheter et vendre des produits n'a jamais été aussi simple </h1>
             </div>
 
             <div class="features_bottom">
 
                 <div class="features-box">
-                    <img src="./assets/images/features_section/two.svg" alt="">
-                    <div class="f-box-title">
-                        Outil de pilotage
+                    <div class="box-top">
+                        <img src="./assets/images/features_section/référencement.svg" alt="">
+                        <h2 class="box-title">Référencement</h2>
                     </div>
-                    <div class="f-box-text">
-                        <p>Informations opérationnelles</p>
-                        <p>Gestion optimisée</p>
-                        <p>Aide et suivi</p>
+
+                    <div class="box-bottom">
+                        <ul class="box-list">
+                            <li class="box-item"> Lorem, ipsum dolor. </li>
+                            <li class="box-item"> Lorem, ipsum dolor. </li>
+                            <li class="box-item"> Lorem, ipsum dolor.</li>
+                        </ul>
+
                     </div>
+
+
+
                 </div>
+
                 <div class="features-box">
-                    <img src="./assets/images/features_section/two.svg" alt="">
-                    <div class="f-box-title">
-                        Référencement
+                    <div class="box-top">
+                        <img src="./assets/images/features_section/commandes.svg" alt="">
+                        <h2 class="box-title">Commandes</h2>
                     </div>
-                    <div class="f-box-text">
-                        <p>Importez des produits rapidement</p>
-                        <p>Découvrer un catalogue divers et
-                        complet</p>
+
+                    <div class="box-bottom">
+                        <ul class="box-list">
+                            <li class="box-item"> Lorem, ipsum dolor. </li>
+                            <li class="box-item"> Lorem, ipsum dolor. </li>
+                            <li class="box-item"> Lorem, ipsum dolor.</li>
+                        </ul>
+
                     </div>
+
+
                 </div>
+
                 <div class="features-box">
-                    <img src="./assets/images/features_section/three.svg" alt="">
-                    <div class="f-box-title">
-                        Commandes
+                    <div class="box-top">      
+                        <img src="./assets/images/features_section/paiement.svg" alt="">
+                        <h2 class="box-title">Paiement</h2>
                     </div>
-                    <div class="f-box-text">
-                        <p>Commander ou expédier ses
-                        produits en quelques clics</p>
+
+                    <div class="box-bottom">
+                        <ul class="box-list">
+                            <li class="box-item"> Lorem, ipsum dolor. </li>
+                            <li class="box-item"> Lorem, ipsum dolor. </li>
+                            <li class="box-item"> Lorem, ipsum dolor.</li>
+                        </ul>
+
                     </div>
+
+
                 </div>
+
                 <div class="features-box">
-                    <img src="./assets/images/features_section/four.svg" alt="">
-                    <div class="f-box-title">
-                        Paiement
+                    
+                    <div class="box-top">
+                        <img src="./assets/images/features_section/facturation.svg" alt="">
+                        <h2 class="box-title">Facturation</h2>
                     </div>
-                    <div class="f-box-text">
-                        Multitudes de méthodes de
-                        paiement, sécurisés
-                    </div>
-                </div>
-                <div class="features-box">
-                    <img src="./assets/images/features_section/fifth.svg" alt="">
-                    <div class="f-box-title">
-                        Facturation
-                    </div>
-                    <div class="f-box-text">
-                        <p>Facturation rapide et automatisée</p>
-                        <p>Facturation électronique obligatoire <br>
-                        à partir de 2023 dans le B2B</p>
+
+                    <div class="box-bottom">
+                        <ul class="box-list">
+                            <li class="box-item"> Lorem, ipsum dolor. </li>
+                            <li class="box-item"> Lorem, ipsum dolor. </li>
+                            <li class="box-item"> Lorem, ipsum dolor.</li>
+                        </ul>
+
                     </div>
                 </div>
+
             </div>
 
         </section>
@@ -226,36 +246,26 @@ En moyenne, c'est jusqu’à 10 heures par semaine que vous pourrez consacrer à
 
         <!-- TARGETS SECTION STARTS -->
         <section class="section-targets">
-            <div class="section-target_header floating">
-                <h1>Nos objectifs</h1>
-            </div>
-            <div class="section-target_body">
-                <!-- -------------------------------------------------------- -->
-                <div class="targets_leftPart">
-                    <img src="/assets/images/targets_section/leftImage.svg" alt="target section image">
-                </div>
-                <!-- -------------------------------------------------------- -->
-                <div class="targets_rightPart">
-                    <div class="target-grid">
-                        <img src="/assets/images/targets_section/rightSide2.svg" width="200px" alt="" class="target-side-img item0">
-                        <div class="target-text">
+            <div class="targets_body">
+
+                <h1 class="targets_header">
+                    Nos objectifs
+                </h1>
+
+                <div class="targets_main">
+                    <div class="targets-grid">
+                        <div class="t-grid-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="t-grid-text">
                             <p>Mettre en avant les <strong>productions locales</strong> et les <strong>circuits de proximité</strong></p>
                         </div>
                     </div>
-                    <!-- <div class="target-grid">
-                        <img src="/assets/images/targets_section/rightSide2.svg" width="200px" alt="" class="target-side-img item1">
-                        <div class="target-text">
-                            <p>Mission sociale :</p>
-                            <ul>
-                                <li><strong>Meilleure rémunération</strong> des producteurs</li>
-                                <li>Améliorer l’<strong>information produit</strong></li>
-                                <li>Contribuer à l’<strong>alimentation sociale et solidaire</strong></li>
-                            </ul>
+                    <div class="targets-grid">
+                        <div class="t-grid-icon">
+                            <i class="fas fa-check"></i>
                         </div>
-                    </div> -->
-                    <div class="target-grid">
-                        <img src="/assets/images/targets_section/rightSide2.svg"  alt="" class="target-side-img item2" >
-                        <div class="target-text">
+                        <div class="t-grid-text">
                             <p>Solution logistique :</p>
                             <ul>
                                 <li>Accès au <strong>numérique</strong></li>
@@ -264,18 +274,22 @@ En moyenne, c'est jusqu’à 10 heures par semaine que vous pourrez consacrer à
                             </ul>
                         </div>
                     </div>
-                    <div class="target-grid">
-                        <img src="/assets/images/targets_section/rightSide2.svg" alt=""  class="target-side-img item3" >
-                        <div class="target-text">
+                    <div class="targets-grid">
+                        <div class="t-grid-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="t-grid-text">
                             <p>
                                 Une plateforme numérique qui permet une <strong>gestion
                                     fluide des approvisionnements</strong> en circuit court. 
                             </p>
                         </div>
                     </div>
-                    <div class="target-grid">
-                        <img src="/assets/images/targets_section/rightSide2.svg" alt=""  class="target-side-img item4">
-                        <div class="target-text">
+                    <div class="targets-grid">
+                        <div class="t-grid-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="t-grid-text">
                             <p>
                                 <strong>Mettre en avant les producteurs et artisans locaux</strong> qui
                                 développent des produits de qualités, mais n'ayant pas
@@ -284,9 +298,11 @@ En moyenne, c'est jusqu’à 10 heures par semaine que vous pourrez consacrer à
                             </p>
                         </div>
                     </div>
-                    <div class="target-grid">
-                        <img src="/assets/images/targets_section/rightSide2.svg" alt=""  class="target-side-img item5" >
-                        <div class="target-text">
+                    <div class="targets-grid">
+                        <div class="t-grid-icon">
+                            <i class="fas fa-check"></i>
+                        </div>
+                        <div class="t-grid-text">
                             <p>
                                 Une solution qui donne de la visibilité à l'offre locale et
                                 <strong>favorise son développement</strong> tout en <strong>accompagnant
@@ -295,8 +311,14 @@ En moyenne, c'est jusqu’à 10 heures par semaine que vous pourrez consacrer à
                         </div>
                     </div>
                 </div>
+
             </div>
-            
+
+            <!-- ************************************** -->
+
+            <div class="targets_image">
+                <img src="./assets/images/targets_section/leftImage.svg" alt="">
+            </div>
         </section>
         <!-- TARGETS SECTION ENDS -->
     </div>
