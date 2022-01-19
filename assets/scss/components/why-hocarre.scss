@@ -1,0 +1,53 @@
+@use '../util' as *;
+@use '../globals' as *;
+
+.why-hocarre{
+    width: 100%;
+    margin: 70px 0;
+}
+
+.wh-container{
+    margin: 0 25px;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+
+    /* ************************** */
+
+    & .top .wh-main-title{
+        font-size: calc(30px + .9vw);
+        font-weight: 400;
+        text-align: center;
+    }
+
+    & .top .wh-main-text{
+        font-size: calc(15px + .45vw);
+        font-weight: 400;
+        text-align: center;
+    }
+
+    /* ****************************** */ 
+
+    & .bottom .wh-row{
+       width: 80%;
+       margin: 0 auto;
+       padding: 5px 0;
+
+       &  .wh-row_top{
+           text-align: center;
+           font-size: calc(20px + .5vw);
+       }
+
+       &  .wh-row_bottom{
+            text-align: center;
+            margin: 0 auto;
+            font-size: calc(12px + .5vw);
+            width: 80%;
+
+            & > p{
+                line-height: 22px;
+            }
+       }
+    }
+
+}
