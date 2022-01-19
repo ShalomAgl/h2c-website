@@ -60,11 +60,10 @@
 
 .box-bottom{
 
-    font-size: calc(.9rem + .425vw);
+    font-size: calc(.9rem + .3vw);
     height: 70%;
     width: 100%;
-    // display: grid;
-    // place-items: center;
+    padding: 5px 0;
 
     & .box-list{
         list-style: disc;
