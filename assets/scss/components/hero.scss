@@ -13,16 +13,32 @@
     background-color: rgba(93, 201, 209, 0.089); 
     width: 80%;
     border-radius: rem(20);
-    padding: rem(30);
+    padding: rem(10);
+    display: flex;
+    flex-direction: column;
 }
 
-.image_hero_A{
-    display: flex;
-    justify-content: center;
+
+.img-hero{
+    height: rem(305);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.hero-img-A{
-    width: rem(300); height: rem(300);
+
+
+.img-hero.img-B{
+    background-image: url("/assets/images/hero_section/hocarree\ algricultrice.png");
+    margin-top: 20px;
 }
+
+.img-hero.img-A{ 
+    background-image: url("/assets/images/hero_section/hocarree\ cuisto.png"); 
+}
+
+
+
+
 
 .hero a {
     width: 35%;
@@ -82,20 +98,28 @@
 
     .hero_container{
         display: flex;
+        flex-direction: column;
         place-items: center;
         width: 70%;
         height: 100%;
     }
 
     .text_hero{
-        width: 50%;
+        height: 50%;
     }
 
-    .image_hero_A{
-        width: 50%;
+    .img-hero{
+        width: 100%;
+        height: 305px;
     }
 
-    .hero-img-A{
-        width: 100%; height: rem(500);
+    .img-hero.img-A{
+        margin-bottom: 10px;
     }
+
+    .img-hero.img-B{
+        margin-top: 10px ;
+    }
+
+    
 }
