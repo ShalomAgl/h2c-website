@@ -60,12 +60,20 @@ function createRipple(event) {
 
 
 /*----------------------------------
-SHOW ON SCROLL EFFECT STARTS
+MODAL WINDOW STARTS
 -----------------------------------  */
+const modalContainer = document.querySelector(".modal-container");
+const modalTriggers = document.querySelectorAll(".modal-trigger");
+
+modalTriggers.forEach(trigger => trigger.addEventListener("click", toggleModal))
+
+function toggleModal(){
+  modalContainer.classList.toggle("active")
+}
 
 
 /*----------------------------------
-SHOW ON SCROLL EFFECT ENDS
+MODAL WINDOW EFFECT ENDS
 -----------------------------------  */
 
 

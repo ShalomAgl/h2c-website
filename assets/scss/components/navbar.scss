@@ -11,7 +11,7 @@
 
 .navbar{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: rem(16) rem(24);
     padding: 0;
@@ -43,14 +43,15 @@
 }
 
 .menu__item{
-    margin: 0 rem(35);
+    margin: 0 rem(17);
 }
 
 .item__link{
-    font-size: rem(19);
+    font-size: rem(17);
     color: rgb(0,0,0);
     padding-bottom: 10px;
     position: relative;
+    text-transform: uppercase;
 }
 
 /* ====> hover effect -> underlined links */

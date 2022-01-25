@@ -16,368 +16,397 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
     <!-- css styles -->
-    <link rel="stylesheet" href="./distribution/css/style.css">
+    <link rel="stylesheet" href="/distribution/css/style.css">
     <!-- Start of HubSpot Embed Code -->
     <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/25227429.js"></script>
     <!-- End of HubSpot Embed Code -->
 </head>
-<body>
+<body id="body">
 
-    <!-- NAVBAR STARTS -->
-    <header class="header">
-        <nav class="navbar" role="navigation">
+    <div class="modal-container">
 
-            <!-- LOGO STARTS -->
-            <div class="navbar__logo">
-                <a href="#"><img class="logo" src="./assets/images/logos/logoHocarre.svg" alt="logo hocarre"></a>
-            </div>
-            <!-- LOGO ENDS -->
+        <div class="overlay modal-trigger"></div>
 
-            <!-- MENU STARTS -->
-            <div class="menu">
-                <ul class="menu__list" id="navMenu">
-                    <li class="menu__item" >
-                        <a class="item__link underlined" href="#">Accueil</a>
-                    </li>
-                    <li class="menu__item" >
-                        <a class="item__link underlined" href="#">Blog</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="item__link underlined" href="./contact.html" target="_blank">Contact</a>
-                    </li>
-                    <li class="menu__item">
-                        <a style="white-space: nowrap;" class="item__link underlined" href="#"> Se connecter</a>
-                    </li>
-                    <li class="menu__item signUp">
-                        <a href="https://app.hocarre.com/fr/register">
-                            <button class="sign-up-btn" role="button">S'inscrire</button>
-                        </a>
-                    </li>
-                </ul>
-                
-            </div>
-            <!-- MENU ENDS -->
-            <button class="menu__hamburger" id="hamburger">
-                <span class="menu__bar"></span>
-                <span class="menu__bar"></span>
-                <span class="menu__bar"></span>
+        <div class="modal" role="dialog" aria-labelledby="modalTitle" aria-describedby="dialogDesc">
+            <button aria-label="close modal"class="close-modal modal-trigger">
+                X
             </button>
-        </nav>
-    </header>
-    <!-- NAVBAR ENDS -->
-
-    <!-- GLOBAL CONTAINER STARTS -->
-    <div class="global-container">
-        <!-- PRESENTATION STARTS -->
-        <section class="section-presentation">
-            <div class="presentation-container ">
-                <div class="presentation__left line-up">
-                    <div class="presentation__header">
-                        <p class="presentation-title line-up gradient-text">
-                            De nombreux producteurs en direct et en un seul paiement.
-                        </p>
-                    </div>
-                    <div class="presentation__body">
-                        <p class="presentation-text">
-                            Avec Ho'Carré, vendez  ou achetez vos produits issus du circuit court.
-                        </p>
-                    </div>
-                    <div class="presentation-cta">
-                        <button class="presentation-cta__button" role="button">
-                            Découvrir la plateforme
-                        </button>
-                    </div>
-                </div>
-
-                <div class="presentation__right line-up ">
-                    <img src="./assets/images/presentation_section/hocarre-platform.png" alt="visuel platforme hocarre">
-                </div>
+            <h1 id="modalTitle">Rejoignez nous !</h1>
+            <p id="dialogDesc">Vous pouvez nous rejoindre en tant qu'acheteur ou vendeur !</p>
+            <div class="modal-content">
+                <button class="modal-content-btn" >
+                    <a  target="_blank" href="https://app.hocarre.com/fr/register" class="register-link">Je suis acheteur</a>
+                </button>
+                <button class="modal-content-btn">
+                    <a target="_blank" href="https://app.hocarre.com/fr/vendor-register" class="register-link">Je suis vendeur</a>
+                </button>
             </div>
-        </section>
-        <!-- PRESENTATION ENDS -->
-
-        <!-- HERO STARTS -->
-
-        <section class="hero">
-            
-            <div class="hero_container">
-                <div class="img-hero img-A"></div>
-
-                <div class="text_hero">
-
-                    <h3 class="text_header">
-                        Vous êtes commerçants?
-                    </h3>
-    
-                    <p class="main_text">
-Trouver des produits locaux n’a jamais été aussi efficace et rapide qu’avec Ho’Carré ! Commandez facilement en une fois une multitude de produits en direct des producteurs. Fini la paperasse et gérez simplement le paiement.                    
-                    </p>
-    
-                    <a href="./contact.html">
-                        <button class="hero-button arrow">En savoir plus</button>
-                    </a>
-    
-                </div>
-    
-    
-            </div>
- 
-
-        </section>
-
-        <!-- ******************************************************************************************* -->
-
-        <section class="hero">
-
-            <div class="hero_container">
-                <div class="text_hero">
-
-                    <h3 class="text_header">
-                        Vous êtes producteurs?
-                    </h3>
-    
-                    <p class="main_text">
-                        Grace à Ho’Carré, vendez en direct et rapidement à des professionnels ! Oubliez les démarches administratives, concentrez vous sur votre savoir-faire. Gérez ses stocks, prix et factures n’a jamais été aussi simple.
-                    </p>
-    
-                    <a href="./contact.html">
-                        <button class="hero-button arrow"> 
-                            En savoir plus
-                        </button>
-                    </a>
-    
-                </div>
-    
-                <div class="img-hero img-B"></div>
-    
-            </div>
-        </section>
-        <!-- HERO ENDS  -->
-
+          </div>
         
-
-        <!-- FEATURES STARTS -->
-        <section class="section-features">
-
-            <div class="features_top">
-                <h1 class="features_title" >Un marché numérique pour échanger rapidement entre professionnels </h1>
-            </div>
-
-            <div class="features_bottom">
-
-                <div class="features-box">
-                    <div class="box-top">
-                        <img src="./assets/images/features_section/référencement.svg" alt="">
-                        <h2 class="box-title">Référencement</h2>
-                    </div>
-
-                    <div class="box-bottom">
-                        <ul class="box-list">
-                            <li class="box-item"> Importez rapidement.   </li>
-                            <li class="box-item"> Catalogue varié, complet </li>
-                        </ul>
-
-                    </div>
-
-
-
-                </div>
-
-                <div class="features-box">
-                    <div class="box-top">
-                        <img src="./assets/images/features_section/commandes.svg" alt="">
-                        <h2 class="box-title">Commandes</h2>
-                    </div>
-
-                    <div class="box-bottom">
-                        <ul class="box-list">
-                            <li class="box-item"> Commandes rapides et faciles. </li>
-                            <li class="box-item"> Expédition simplifiée. </li>
-                            <!-- <li class="box-item"> Lorem, ipsum dolor.</li> -->
-                        </ul>
-
-                    </div>
-
-
-                </div>
-
-                <div class="features-box">
-                    <div class="box-top">      
-                        <img src="./assets/images/features_section/paiement.svg" alt="">
-                        <h2 class="box-title">Paiement</h2>
-                    </div>
-
-                    <div class="box-bottom">
-                        <ul class="box-list">
-                            <li class="box-item"> Divers moyens de paiement. </li>
-                            <li class="box-item"> Paiements Sécurisés. </li>
-                            <!-- <li class="box-item"> Lorem, ipsum dolor.</li> -->
-                        </ul>
-
-                    </div>
-
-
-                </div>
-
-                <div class="features-box">
-                    
-                    <div class="box-top">
-                        <img src="./assets/images/features_section/facturation.svg" alt="">
-                        <h2 class="box-title">Facturation</h2>
-                    </div>
-
-                    <div class="box-bottom">
-                        <ul class="box-list">
-                            <li class="box-item"> Facturation Rapide, automatisée. </li>
-                            <li class="box-item">Format électronique. </li>
-                            <!-- <li class="box-item"> Lorem, ipsum dolor.</li> -->
-                        </ul>
-
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-        <!-- FEATURES ENDS -->
-
-
-        <!-- SECTION WHY HOCARRE STARTS -->
-        <section class="why-hocarre">
-            <div class="wh-container">
-                <div class="top">
-                    <h1 class="wh-main-title">
-                        Avec Ho'Carré, optimisez votre temps durant vos achats et ventes de produits ! 
-                    </h1>
-                    <p class="wh-main-text">
-                        Découvrez les plaisirs d'acheter et de vendre en toute simplicité grâce à notre solution digitale.
-                    </p>
-                </div>
-                <div class="bottom">
-                    <div class="wh-row">
-                        <div class="wh-row_top">
-                            <p>🤝</p>
-                        </div>
-                        <div class="wh-row_bottom">
-                            <p>
-                                Accessibilité
-                            </p>
-                            <p>
-                                Une plateforme très facile d’usage ne nécessitant aucune connaissance en informatique.                           
-                            </p>
-                        </div>
-                    </div>
-                    <div class="wh-row">
-                        <div class="wh-row_top">
-                            <p>🕓</p>
-                        </div>
-                        <div class="wh-row_bottom">
-                            <p>
-                                Rapidité
-                            </p>
-                            <p>
-                                Ne perdez plus de temps avec la paperasse: elle est automatisée.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="wh-row">
-                        <div class="wh-row_top">
-                            <p>🙌</p>
-                        </div>
-                        <div class="wh-row_bottom">
-                            <p>
-                                Automatisation
-                            </p>
-                            <p>
-                                Centralisez toutes les étapes et concentrez vous uniquement sur votre savoir faire.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
-    <!-- GLOBAL CONTAINER ENDS -->
 
+    <div id="main-wrapper" aria-hidden="false">
 
+        <!-- NAVBAR STARTS -->
+        <header class="header">
+            <nav class="navbar" role="navigation">
 
-    <!-- FOOTER STARTS -->
-    <footer class="footer">
-        <!-- container for footer elements -->
-        <div class="footer-container">
+                <!-- LOGO STARTS -->
+                <div class="navbar__logo">
+                    <a target="_blank" href=""><img class="logo" src="/assets/images/logos/logoHocarre.svg" alt="logo hocarre"></a>
+                </div>
+                <!-- LOGO ENDS -->
 
-            <div class="footer-block block-logo">
-                    <img class="footer-logo" src="./assets/images/logos/logoHocarre2.svg"  alt="logo hocarré footer">
-            </div>
-                <!-- MENU -->
-            <div class="footer-block ">
-                    <h3 class="block-title company">HO'CARRÉ</h3>
-                    <ul class="block-list">
-                        <li class="block-list__item">
-                            <a style="white-space: nowrap;" target="_blank" href="">Qui sommes nous?</a>
+                <!-- MENU STARTS -->
+                <div class="menu">
+                    <ul class="menu__list" id="navMenu">
+                        <li class="menu__item" >
+                            <a class="item__link underlined" href="#">Accueil</a>
                         </li>
-                        <li class="block-list__item">
-                            <a target="_blank" href="">Nos Services</a>
+                        <li class="menu__item" >
+                            <a class="item__link underlined" href="#">Blog</a>
                         </li>
-                        <li class="block-list__item">
-                            <a target="_blank" href="">Mentions Légales</a>
+                        <li class="menu__item">
+                            <a class="item__link underlined" href="/contact.html" target="_blank">Contact</a>
                         </li>
-                        <li class="block-list__item">
-                            <a target="_blank" href="">CGU</a>
+                        <li class="menu__item">
+                            <a class="item__link underlined" href="/contact.html" target="_blank">Aide</a>
+                        </li>
+                        <li class="menu__item">
+                            <a target="_blank" style="white-space: nowrap;" class="item__link underlined" href="https://app.hocarre.com/fr/login">Se connecter</a>
+                        </li>
+                        <li class="menu__item signUp">
+                            <button class="sign-up-btn modal-trigger modal-btn" role="button">S'inscrire</button>
                         </li>
                     </ul>
-            </div>
-            <!-- MENU ENDS -->
-            <!-- CONTACT STARTS-->
-            <div class="footer-block contact">
-                    <h3 class="block-title">NOUS CONTACTER</h3>
-                    <ul class="block-list">
-                        <li class="block-list__item">
-                            <a href="tel:+33184253763" target="_blank"> <i style="margin-right: 5px;" class="fas fa-phone"></i> +33 1 84 25 37 63</a>
-                        </li>
-                        <li class="block-list__item">
-                            <a href="mailto:hello@hocarre.com" target="_blank"> <i style="margin-right: 10px;" class="far fa-envelope-open"></i>hello@hocarre.com</a>
-                        </li>
-                        <li class="block-list__item">
-                            <a href="#" target="_blank"> <i style="margin-right: 10px;" class="fas fa-question-circle"></i> Aide</a>
-                        </li>
-                    </ul>
-            </div>
-            <!-- CONTACT ENDS -->
-            <!-- SOCIAL NETWORKS STARTS -->
-            <div class="footer-block">
-                    <h3 class="block-title">NOS RÉSEAUX</h3>
-                    <ul class="block-list media">
-                        <li class="block-list__item">
-                            <a href="" target="_blank" > 
-                                <i class="fab fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li class="block-list__item">
-                            <a target="_blank" href=""> 
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                        </li>
-                        <li class="block-list__item">
-                            <a target="_blank" href=""> 
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="block-list__item">
-                            <a target="_blank" href=""> 
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </li>
-                    </ul>
-            </div>
-            <!-- SOCIAL NETWORKS ENDS -->
+                    
+                </div>
+                <!-- MENU ENDS -->
+                <button class="menu__hamburger" id="hamburger">
+                    <span class="menu__bar"></span>
+                    <span class="menu__bar"></span>
+                    <span class="menu__bar"></span>
+                </button>
+            </nav>
+        </header>
+        <!-- NAVBAR ENDS -->
+
+        <!-- GLOBAL CONTAINER STARTS -->
+        <div class="global-container">
+            <!-- PRESENTATION STARTS -->
+            <section class="section-presentation">
+                <div class="presentation-container ">
+                    <div class="presentation__left line-up">
+                        <div class="presentation__header">
+                            <p class="presentation-title line-up gradient-text">
+                                De nombreux producteurs en direct et en un seul paiement.
+                            </p>
+                        </div>
+                        <div class="presentation__body">
+                            <p class="presentation-text">
+                                Avec Ho'Carré, vendez  ou achetez vos produits issus du circuit court.
+                            </p>
+                        </div>
+                        <div class="presentation-cta">
+                            <button class="presentation-cta__button" role="button">
+                                Découvrir la plateforme
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="presentation__right line-up ">
+                        <img src="/assets/images/presentation_section/hocarre-platform.png" alt="visuel platforme hocarre">
+                    </div>
+                </div>
+            </section>
+            <!-- PRESENTATION ENDS -->
+
+            <!-- HERO STARTS -->
+
+            <section class="hero">
+                
+                <div class="hero_container">
+                    <div class="img-hero img-A"></div>
+
+                    <div class="text_hero">
+
+                        <h3 class="text_header">
+                            Vous êtes commerçants?
+                        </h3>
+        
+                        <p class="main_text">
+    Trouver des produits locaux n’a jamais été aussi efficace et rapide qu’avec Ho’Carré ! Commandez facilement en une fois une multitude de produits en direct des producteurs. Fini la paperasse et gérez simplement le paiement.                    
+                        </p>
+        
+                        <a href="./contact.html">
+                            <button class="hero-button arrow">En savoir plus</button>
+                        </a>
+        
+                    </div>
+        
+        
+                </div>
+    
+
+            </section>
+
+            <!-- ******************************************************************************************* -->
+
+            <section class="hero">
+
+                <div class="hero_container">
+                    <div class="text_hero">
+
+                        <h3 class="text_header">
+                            Vous êtes producteurs?
+                        </h3>
+        
+                        <p class="main_text">
+                            Grace à Ho’Carré, vendez en direct et rapidement à des professionnels ! Oubliez les démarches administratives, concentrez vous sur votre savoir-faire. Gérez ses stocks, prix et factures n’a jamais été aussi simple.
+                        </p>
+        
+                        <a href="./contact.html">
+                            <button class="hero-button arrow"> 
+                                En savoir plus
+                            </button>
+                        </a>
+        
+                    </div>
+        
+                    <div class="img-hero img-B"></div>
+        
+                </div>
+            </section>
+            <!-- HERO ENDS  -->
+
+            
+
+            <!-- FEATURES STARTS -->
+            <section class="section-features">
+
+                <div class="features_top">
+                    <h1 class="features_title" >Un marché numérique pour échanger rapidement entre professionnels </h1>
+                </div>
+
+                <div class="features_bottom">
+
+                    <div class="features-box">
+                        <div class="box-top">
+                            <img src="/assets/images/features_section/referencement.svg" alt="image pour referencement">
+                            <h2 class="box-title">Référencement</h2>
+                        </div>
+
+                        <div class="box-bottom">
+                            <ul class="box-list">
+                                <li class="box-item"> Importez rapidement.   </li>
+                                <li class="box-item"> Catalogue varié, complet </li>
+                            </ul>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="features-box">
+                        <div class="box-top">
+                            <img src="/assets/images/features_section/commandes.svg" alt="image pour commandes">
+                            <h2 class="box-title">Commandes</h2>
+                        </div>
+
+                        <div class="box-bottom">
+                            <ul class="box-list">
+                                <li class="box-item"> Commandes rapides et faciles. </li>
+                                <li class="box-item"> Expédition simplifiée. </li>
+                                <!-- <li class="box-item"> Lorem, ipsum dolor.</li> -->
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="features-box">
+                        <div class="box-top">      
+                            <img src="/assets/images/features_section/paiement.svg" alt="image pour paiement">
+                            <h2 class="box-title">Paiement</h2>
+                        </div>
+
+                        <div class="box-bottom">
+                            <ul class="box-list">
+                                <li class="box-item"> Divers moyens de paiement. </li>
+                                <li class="box-item"> Paiements Sécurisés. </li>
+                                <!-- <li class="box-item"> Lorem, ipsum dolor.</li> -->
+                            </ul>
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="features-box">
+                        
+                        <div class="box-top">
+                            <img src="/assets/images/features_section/facturation.svg" alt="image pour facturation">
+                            <h2 class="box-title">Facturation</h2>
+                        </div>
+
+                        <div class="box-bottom">
+                            <ul class="box-list">
+                                <li class="box-item"> Facturation Rapide, automatisée. </li>
+                                <li class="box-item">Format électronique. </li>
+                                <!-- <li class="box-item"> Lorem, ipsum dolor.</li> -->
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+            <!-- FEATURES ENDS -->
+
+
+            <!-- SECTION WHY HOCARRE STARTS -->
+            <section class="why-hocarre">
+                <div class="wh-container">
+                    <div class="top">
+                        <h1 class="wh-main-title">
+                            Avec Ho'Carré, optimisez votre temps durant vos achats et ventes de produits ! 
+                        </h1>
+                        <p class="wh-main-text">
+                            Découvrez les plaisirs d'acheter et de vendre en toute simplicité grâce à notre solution digitale.
+                        </p>
+                    </div>
+                    <div class="bottom">
+                        <div class="wh-row">
+                            <div class="wh-row_top">
+                                <p>🤝</p>
+                            </div>
+                            <div class="wh-row_bottom">
+                                <p>
+                                    Accessibilité
+                                </p>
+                                <p>
+                                    Une plateforme très facile d’usage ne nécessitant aucune connaissance en informatique.                           
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wh-row">
+                            <div class="wh-row_top">
+                                <p>🕓</p>
+                            </div>
+                            <div class="wh-row_bottom">
+                                <p>
+                                    Rapidité
+                                </p>
+                                <p>
+                                    Ne perdez plus de temps avec la paperasse: elle est automatisée.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wh-row">
+                            <div class="wh-row_top">
+                                <p>🙌</p>
+                            </div>
+                            <div class="wh-row_bottom">
+                                <p>
+                                    Automatisation
+                                </p>
+                                <p>
+                                    Centralisez toutes les étapes et concentrez vous uniquement sur votre savoir faire.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
+        <!-- GLOBAL CONTAINER ENDS -->
 
-    </footer>
-    <!-- FOOTER ENDS -->
+
+
+        <!-- FOOTER STARTS -->
+        <footer class="footer">
+            <!-- container for footer elements -->
+            <div class="footer-container">
+
+                <div class="footer-block block-logo">
+                        <img class="footer-logo" src="./assets/images/logos/logoHocarre2.svg"  alt="logo hocarré footer">
+                </div>
+                    <!-- MENU -->
+                <div class="footer-block ">
+                        <h3 class="block-title company">HO'CARRÉ</h3>
+                        <ul class="block-list">
+                            <li class="block-list__item">
+                                <a style="white-space: nowrap;" target="_blank" href="">Qui sommes nous?</a>
+                            </li>
+                            <li class="block-list__item">
+                                <a target="_blank" href="">Nos Services</a>
+                            </li>
+                            <li class="block-list__item">
+                                <a target="_blank" href="">Mentions Légales</a>
+                            </li>
+                            <li class="block-list__item">
+                                <a target="_blank" href="">CGU</a>
+                            </li>
+                        </ul>
+                </div>
+                <!-- MENU ENDS -->
+                <!-- CONTACT STARTS-->
+                <div class="footer-block contact">
+                        <h3 class="block-title">NOUS CONTACTER</h3>
+                        <ul class="block-list">
+                            <li class="block-list__item">
+                                <a href="tel:+33184253763" target="_blank"> <i style="margin-right: 5px;" class="fas fa-phone"></i> +33 1 84 25 37 63</a>
+                            </li>
+                            <li class="block-list__item">
+                                <a href="mailto:hello@hocarre.com" target="_blank"> <i style="margin-right: 10px;" class="far fa-envelope-open"></i>hello@hocarre.com</a>
+                            </li>
+                            <li class="block-list__item">
+                                <a href="#" target="_blank"> <i style="margin-right: 10px;" class="fas fa-question-circle"></i> Aide</a>
+                            </li>
+                        </ul>
+                </div>
+                <!-- CONTACT ENDS -->
+                <!-- SOCIAL NETWORKS STARTS -->
+                <div class="footer-block">
+                        <h3 class="block-title">NOS RÉSEAUX</h3>
+                        <ul class="block-list media">
+                            <li class="block-list__item">
+                                <a href="" target="_blank" > 
+                                    <i class="fab fa-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="block-list__item">
+                                <a target="_blank" href=""> 
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="block-list__item">
+                                <a target="_blank" href=""> 
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="block-list__item">
+                                <a target="_blank" href=""> 
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                </div>
+                <!-- SOCIAL NETWORKS ENDS -->
+            </div>
+
+        </footer>
+        <!-- FOOTER ENDS -->
+
+    </div>
+
+    
     
 
     <!-- javascript -->
-    <script src="./distribution/js/script.js"></script>
+    <script src="/distribution/js/script.js"></script>
 </body>
 </html>
