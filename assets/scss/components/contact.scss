@@ -234,3 +234,38 @@
 /*-----------------------------------
 * CONTACT FORM ENDS
 -----------------------------------*/
+
+
+/*-----------------------------------
+* NETWORKS STARTS
+-----------------------------------*/
+
+.ct-pg-links{
+
+    & a{
+        color: black;
+    }
+
+    & a i:hover{
+        transform: scale(1.22);
+    }
+    & a i.instagram:hover{
+        color: var(--instagram);
+    }
+    & a i.facebook:hover{
+        color: var(--facebook);
+    }
+    & a i.linkedin:hover{
+        color: var(--linkedin);
+    }
+    & a i.twitter:hover{
+        color: var(--twitter);
+    }
+}
+
+
+/*-----------------------------------
+* NETWORK ENDS 
+-----------------------------------*/
+
+
