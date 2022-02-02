@@ -78,3 +78,33 @@ MODAL WINDOW EFFECT ENDS
 
 
 
+/*----------------------------------
+COOKIE CONSENNT POP UP 
+-----------------------------------  */
+
+var cookieModal = document.querySelector(".cookie-consent-modal")
+var cancelCookieBtn = document.querySelector(".consent-btn.no")
+var acceptCookieBtn = document.querySelector(".consent-btn.yes")
+
+cancelCookieBtn.addEventListener("click", () => {
+  cookieModal.classList.remove("active")
+})
+
+acceptCookieBtn.addEventListener("click", () => {
+  cookieModal.classList.remove("active")
+  localStorage.setItem("cookieAccepted", "yes")
+})
+
+setTimeout( () => {
+  var cookieAccepted = localStorage.getItem("cookieAccepted")
+  if (cookieAccepted != "yes"){
+    cookieModal.classList.add("active")
+  }
+}, 1500 )
+
+/*----------------------------------
+COOKIE CONSENT POP UP
+-----------------------------------  */
+
+
+

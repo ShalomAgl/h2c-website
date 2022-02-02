@@ -10,10 +10,10 @@
 }
 
 .hero_container{
-    background-color: rgba(93, 201, 209, 0.089); 
+    background-color: rgba(234, 225, 157, 0.233); 
     width: 80%;
     border-radius: rem(20);
-    padding: rem(10);
+    padding: rem(15);
     display: flex;
     flex-direction: column;
 }
@@ -21,19 +21,21 @@
 
 .img-hero{
     height: rem(305);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 
 .img-hero.img-B{
-    background-image: url("/assets/images/hero_section/hocarree\ algricultrice.png");
+    background-image: url("/assets/images/hero_section/Plan\ de\ travail\ 4.svg");
     margin-top: 20px;
 }
 
 .img-hero.img-A{ 
-    background-image: url("/assets/images/hero_section/hocarree\ cuisto.png"); 
+    background-image: url("/assets/images/hero_section/ho\'carré\ site\ 2_Plan\ de\ travail\ 1.png"); 
+    transform: scale(-1,1);
+    margin-right: 10px;
 }
 
 
@@ -45,7 +47,7 @@
 .hero-button{
     background-color: transparent;
     border: 1.4px solid var(--violet-hocarre) ;
-    padding: rem(10);
+    padding: rem(10) rem(7);
     width: 100%;
     border-radius: 10px;
     margin-top: 10px;
