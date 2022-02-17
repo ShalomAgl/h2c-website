@@ -13,7 +13,7 @@ Install:
 
 In your main project folder: 
 
-`npm install gulp cssnano browser-sync gulp-postcss gulp-terser gulp-sass --save-dev`
+`npm install gulp cssnano browser-sync gulp-postcss gulp-terser gulp-sass gulp-cli gulp-autoprefixer gulp-uglify --save-dev`
 
 Before starting to code just type `gulp`in the terminal
 
