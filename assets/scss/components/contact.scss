@@ -2,7 +2,7 @@
 @use '../util' as *;
 
 .contact-page-body{
-    background-color: rgba(237, 213, 183, 0.384);
+    background-color: #f0ebf1;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -21,7 +21,7 @@
 
 .contact-page-container{
     display: flex;
-    width: 70%;
+    width: 78%;
     margin: 0 auto;
     
 }
@@ -54,25 +54,15 @@
     blink-caret .8s step-end 8;
 }
 
-@keyframes typing {
-    from { width: 0 }
-    to { width: 85% }
-  }
-
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: var(--violet-hocarre); }
-  }
 
 .ct-page__body p{
     width: 75%;
-    font-size: rem(18) ;
+    font-size: calc(rem(15 ) + .4vw) ;
 }
 
 .contact-page__bottom{
     margin-top: rem(45);
     background-color: rgba(255, 255, 255, 0.411);
-    // border: .625px solid black;
     border-radius: rem(10);
     min-width: rem(210); max-width: rem(230);
     min-height: rem(190);
@@ -244,3 +234,38 @@
 /*-----------------------------------
 * CONTACT FORM ENDS
 -----------------------------------*/
+
+
+/*-----------------------------------
+* NETWORKS STARTS
+-----------------------------------*/
+
+.ct-pg-links{
+
+    & a{
+        color: black;
+    }
+
+    & a i:hover{
+        transform: scale(1.22);
+    }
+    & a i.instagram:hover{
+        color: var(--instagram);
+    }
+    & a i.facebook:hover{
+        color: var(--facebook);
+    }
+    & a i.linkedin:hover{
+        color: var(--linkedin);
+    }
+    & a i.twitter:hover{
+        color: var(--twitter);
+    }
+}
+
+
+/*-----------------------------------
+* NETWORK ENDS 
+-----------------------------------*/
+
+

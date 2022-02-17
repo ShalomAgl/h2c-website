@@ -60,36 +60,50 @@ function createRipple(event) {
 
 
 /*----------------------------------
-SHOW ON SCROLL EFFECT STARTS
+MODAL WINDOW STARTS
+-----------------------------------  */
+const modalContainer = document.querySelector(".modal-container");
+const modalTriggers = document.querySelectorAll(".modal-trigger");
+
+modalTriggers.forEach(trigger => trigger.addEventListener("click", toggleModal))
+
+function toggleModal(){
+  modalContainer.classList.toggle("active")
+}
+
+
+/*----------------------------------
+MODAL WINDOW EFFECT ENDS
 -----------------------------------  */
 
-const threshold = .1
-const options = {
-  root: null,
-  rootMargin: '0px',
-  threshold
-}
 
-const handleIntersect = function (entries, observer) {
-  entries.forEach(function (entry) {
-    if (entry.intersectionRatio > threshold) {
-      entry.target.classList.remove('invisible')
-      observer.unobserve(entry.target)
-    }
-  })
-}
 
-document.documentElement.classList.add('invisible-loaded')
-
-window.addEventListener("DOMContentLoaded", function () {
-  const observer = new IntersectionObserver(handleIntersect, options)
-  const targets = document.querySelectorAll('.invisible')
-  targets.forEach(function (target) {
-    observer.observe(target)
-  })
-})
 /*----------------------------------
-SHOW ON SCROLL EFFECT ENDS
+COOKIE CONSENNT POP UP 
+-----------------------------------  */
+
+var cookieModal = document.querySelector(".cookie-consent-modal")
+var cancelCookieBtn = document.querySelector(".consent-btn.no")
+var acceptCookieBtn = document.querySelector(".consent-btn.yes")
+
+cancelCookieBtn.addEventListener("click", () => {
+  cookieModal.classList.remove("active")
+})
+
+acceptCookieBtn.addEventListener("click", () => {
+  cookieModal.classList.remove("active")
+  localStorage.setItem("cookieAccepted", "yes")
+})
+
+setTimeout( () => {
+  var cookieAccepted = localStorage.getItem("cookieAccepted")
+  if (cookieAccepted != "yes"){
+    cookieModal.classList.add("active")
+  }
+}, 1500 )
+
+/*----------------------------------
+COOKIE CONSENT POP UP
 -----------------------------------  */
 
 

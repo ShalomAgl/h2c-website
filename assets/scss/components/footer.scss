@@ -4,29 +4,34 @@
 
 .footer{
     width: 100%;
-    min-height: 250px;
-    background-color: var(--white);
+    min-height: 240px;
+    height: 200px;
+    background-color: #fff;
     text-decoration: none;
+    
 }
 
 .footer-container{
-    max-width: rem(1100);
+    background-color: #fff;
+    max-width: rem(1200);
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     font-size: rem(15);
     padding: rem(30) 0 0;
+    
 }
 
 .footer-block{
     flex-basis: 20%;
-    margin: 0 rem(30);
+    margin: 0;
    
 }
 
 .footer-block.block-logo{
     align-self: center;
+    margin-right: 30px;
 }
 
 .footer-logo{
@@ -95,8 +100,6 @@
 
 .block-list__item > a{
     color: rgba(51, 51, 51, 0.911);
-
-    
 }
 
 /* ===> RESPONSIVE*/
@@ -117,10 +120,14 @@
 @media screen and (max-width: rem(600)) {
     .footer-container{
         justify-content: center;
+        align-items: center;
         padding-top: rem(30);
     }
 
     .footer-block{
         flex-basis: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }

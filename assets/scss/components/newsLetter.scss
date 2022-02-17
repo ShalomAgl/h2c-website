@@ -1,0 +1,93 @@
+@use '../util' as *;
+@use '../globals' as *;
+
+.news-letter{
+    width: 100%;
+    min-height: rem(150);
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.large-img{
+    background-image: url("/assets/images/hero_section/hocarré-site-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 700px;
+}
+
+
+.newsLetter-global-container{
+    border: 1.5px solid var(--violet-hocarre);
+    border-radius: 10px;
+    max-width: 350px;
+    width: 50%;
+    height: 480px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.404);
+    position: relative;
+    top: 40px;
+}
+
+.newsLetter-global-container{
+
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & h2{
+        text-align: center;
+        font-size: calc(14px + 1vw);
+        width: 90%;
+    }
+
+    & .newsLetter-subtitle{
+        font-size: calc(15px + .35vw);
+        text-align: center;
+        font-weight: 600;
+    }
+    
+}
+
+.news-letter-container{
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+
+    & .newsL-mail-field{
+        padding: 7px 5px;
+        border-radius: 5px;
+        outline: none;
+        border: .3px solid rgba(128, 128, 128, 0.336) ;
+        background-color: rgba(128, 128, 128, 0.13);
+    }
+
+    & .newsL-submit-btn{
+        background-color: var(--violet-hocarre);
+        border-radius: 5px;
+        outline: none;
+        color: white;
+        border: none;
+    }
+    
+}
+
+// .large-img{
+//     background-image: url("/assets/images/hero_section/hocarré-site-1.png");
+//     background-size: cover;
+//     width: 100%;
+//     height: 100vh;
+// }
