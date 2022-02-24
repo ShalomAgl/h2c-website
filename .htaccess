@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{Server_Port} !=443
+RewriteRule ^(.*)$ https://hocarre.com/$1 [R=301,L]
+Redirect /fr https://hocarre.com/

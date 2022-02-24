@@ -1,0 +1,54 @@
+@use '../util' as *;
+@use '../globals' as *;
+
+.section-presentation-qsn{
+    width: 100%;
+    height: 100vh;
+    background-image: url("/assets/images/first-section/presentation.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+
+    & .qsn-pres-container{
+        width: 50%;
+        float: right;
+        margin-right: 5%;
+
+        & .main-text, 
+        & .main-paragraph{
+        color: white;
+        font-size: 20px;
+        }
+        
+        & .main-text{
+            font-size: 35px;
+            margin: 0;
+        }
+    }
+
+}
+
+.first-section-title{
+    font-size: 30px;
+    text-align: center;
+    color: var(--violet-hocarre);   
+}
+
+.first-section-text{
+    text-align: justify;
+    padding: 0 13px 0 13px;
+    line-height: 1.4;
+}
+
+.first-section-image{
+    width: 90%;
+    height: 50%;
+    background-image: url("/assets/images/first-section/first.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
