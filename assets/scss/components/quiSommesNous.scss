@@ -1,54 +1,101 @@
 @use '../util' as *;
 @use '../globals' as *;
 
-.section-presentation-qsn{
+
+
+.global-container-whoWeAre{
     width: 100%;
-    height: 100vh;
-    background-image: url("/assets/images/first-section/presentation.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    
 
-    & .qsn-pres-container{
-        width: 50%;
-        float: right;
-        margin-right: 5%;
+    & .section_whoWeAre--intro{
+        width: 100%;
+        height: 89vh;
+        background-image: url("/assets/images/qui-sommes-nous/presentation.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: flex-end; align-items: flex-end;
+        margin-bottom: 50px;
+        & .intro-text{
+            color: white;
+            font-size: calc(15px + .8vw);
+            font-weight: bold;
+            width: 70%;
 
-        & .main-text, 
-        & .main-paragraph{
-        color: white;
-        font-size: 20px;
+            & p:first-of-type{
+                font-size: calc(30px + 1.1vw);
+                margin-bottom: 20px;
+                font-weight: bolder;
+            }
+        }
+    }
+
+    & .section_whoWeAre{
+        width: 100%;
+        margin-bottom: 90px;
+
+        & .div_whoWeAre.w-desc{
+            width: 100%;
+            padding: 0 10px;
+
+            & .whoWeAre--header .section-title{
+                // text-align: center;
+                font-size: calc(20px + .7vw);
+                color: #000;
+                
+                & span{
+                    color: #972a7a;
+                    font-weight: bolder;
+                    font-size: calc(23px + .7vw);
+                }
+            }
+
+            & .whoWeAre--body{
+                line-height: 1.3;
+                font-size: calc(15px + .2vw);
+                // background-color: #F4EAE2;
+            }
         }
         
-        & .main-text{
-            font-size: 35px;
-            margin: 0;
+        & .div_whoWeAre.w-illustration{
+            width: 100%;
+            padding: 0 10px;
+            max-width: 100%;
+
+            & img{
+                width: 100%;
+                height: 80%;
+                border-radius: 15px;
+            }
         }
     }
 
 }
 
-.first-section-title{
-    font-size: 30px;
-    text-align: center;
-    color: var(--violet-hocarre);   
+@media screen and (min-width:850px){
+    
+.global-container-whoWeAre{
+
+        & .section_whoWeAre{
+            flex-direction: row;
+            width: 90%;
+            margin: 0 auto;
+            & .div_whoWeAre.w-desc{
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            & .div_whoWeAre.w-illustration{
+                width: 40%;
+
+                & img{
+                    height: 85%;
+                }
+            }
+        }
+    }
 }
 
-.first-section-text{
-    text-align: justify;
-    padding: 0 13px 0 13px;
-    line-height: 1.4;
-}
 
-.first-section-image{
-    width: 90%;
-    height: 50%;
-    background-image: url("/assets/images/first-section/first.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
+

@@ -130,7 +130,13 @@
     .presentation__left{
         height: 60%;
         width: 100%;
-        justify-content: flex-start;
+        // justify-content: flex-start;
+    }
+
+
+    .presentation-title,
+    .presentation-text{
+        margin-left: 5px; margin-right: 5px;
     }
 
     .presentation__right{
@@ -155,6 +161,32 @@
 
     .presentation-cta__button{
         left: 20%;
+    }
+}
+
+
+@media screen and (max-width: 820px) {
+
+    .section-presentation{
+        height: 825px;
+
+        & .presentation__left{
+            text-align: center;
+        }
+
+    }
+
+
+    .presentation-cta__button{
+        left: 0%;
+    }
+}
+
+
+@media screen and (max-width: rem(905)){
+    .presentation__header,
+    .presentation__body{
+        width: 100%;
     }
 }
 

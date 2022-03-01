@@ -6,33 +6,30 @@
  ------------------------------ */
 .header{
     width: 100%;
-    min-height: 75px;
+    min-height: 70px;
 }
 
 .navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: rem(16) rem(24);
-    padding: 0;
     width: 100%;
+    padding: 0;
     max-height: 70px;
     overflow: hidden;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
-    background-color: #fff;
-    height: 100%;
+    background-color: #f7f1dc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar__logo{
-    position: relative;
-    left: rem(55);
+    margin-left: 2%;
 }
 
 .logo{
-    width: rem(250);
+    width: rem(220);
     height:100%;
 }
 
@@ -47,7 +44,7 @@
 }
 
 .item__link{
-    font-size: rem(17);
+    font-size: rem(15);
     color: rgb(0,0,0);
     padding-bottom: 10px;
     position: relative;
@@ -86,12 +83,12 @@ button{
 }
 
 .sign-up-btn{
-    border: 2px solid var(--violet-hocarre);
+    border: 1.8px solid var(--violet-hocarre);
     color: var(--violet-hocarre);
-    font-size: rem(21);
+    font-size: rem(18);
     background-color: transparent;
     border-radius: rem(10);
-    padding: rem(5) rem(25);
+    padding: rem(5) rem(15);
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.3);
     font-weight: 700 ;
     cursor: pointer;
@@ -142,7 +139,7 @@ button{
 *MOBILE VERSION STARTS
 -----------------------------------  */
 
-@media only screen and (max-width: rem(865)){
+@media only screen and (max-width: rem(923)){
 
     .navbar{
         justify-content: space-between;
@@ -157,11 +154,12 @@ button{
         border-radius: rem(10);
         text-align: center;
         transition: .7s;
-        background-color: var(--white);
+        background-color: #F2F0EA;
     }
 
     .menu__list.menu--is-active{
         left: 0;
+        padding: 10px 0;
     }
 
     .menu__item{
