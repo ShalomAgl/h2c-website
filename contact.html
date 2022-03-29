@@ -27,132 +27,80 @@
         </script> 
         <!-- End of Leadfeeder script  -->
     </head>
-<body class="contact-page-body">
-    <!-- LOGO STARTS -->
-    <header class="contact-page-header">
-        <div class="contact-page__logo-container">
-            <a href="/index.html"><img width="150px" height="150px" src="/assets/images/logos/logoHocarre.svg" alt="Logo Ho'Carre" class="contact__logo"></a>
-        </div>
-    </header>
-    <!-- LOGO ENDS -->
 
-    <!-- CONTACT PAGE CONTAINER -->
-    <div class="contact-page-container">
 
-        <!-- CONTACT PAGE TEXT STARTS -->
-        <div class="contact-page-desc">
-            <div class="contact-page-top">
-                <div class="ct-pg__header">
-                    <h2>Contactez-nous !</h2>
-                </div>
-                <div class="ct-page__body">
-                    <p>Remplissez le formulaire et nous vous recontacterons dans les plus brefs délais !</p>
-                </div>
+    <body id="contactPage_body" >
+        <!-- GLOBAL CONTAINER -->
+        <div class="globalContainer_contact">
+
+            <!-- HEADER  -->
+            <div class="contactHeader">
+                <img src="/assets/images/logos/logoHocarre.svg" alt="Logo Contact Page" class="logoContactPage" onclick="window.location.href= 'https://hocarre.com' ">
             </div>
-            <div class="contact-page__bottom">
-                <div class="ct-pg-row">
-                    04 20 13 06 00
-                </div>
-                <div class="ct-pg-row">
-                    01 84 25 37 63
-                </div>
-                <div class="ct-pg-row">
-                    hello@hocarre.com
-                </div>
-                <div class="ct-pg-row">
-                    <ul class="ct-pg-networks">
-                        <li class="ct-pg-links">
-                            <a href="https://www.facebook.com/pages/category/Product-Service/HoCarr%C3%A9-102926855340352/"  > 
-                                <i class="fab fa-facebook facebook"></i>
-                            </a>
-                        </li>
-                        <li class="ct-pg-links">
-                            <a  href="https://fr.linkedin.com/company/ho-carre"> 
-                                <i class="fab fa-linkedin linkedin"></i>
-                            </a>
-                        </li>
-                        <li class="ct-pg-links">
-                            <a  href="https://www.instagram.com/hocarre.fr/?hl=fr"> 
-                                <i class="fab fa-instagram instagram"></i>
-                            </a>
-                        </li>
-                        <li class="ct-pg-links">
-                            <a  href="https://twitter.com/ho_carre"> 
-                                <i class="fab fa-twitter twitter"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <!-- HEADER ENDS -->
 
-        </div>
-        <!-- CONTACT PAGE TEXT ENDS -->
+            <!-- MAIN CONTENT  -->
 
-        <!-- CONTACT FORM STARTS -->
-        <div class="form-container">
-            <!--
-            <form action="#" method="post" class="contact-form" id="contact-form">
+            <div class="contactPage_mainContent">
+
+                <!-- TEXT PART -->
+                <div class="contactUs_text">
+                    <h1>Contactez nous !</h1>
+                    <p>Besoin d'aide ? Une question ? Nous sommes là pour vous</p>
+                </div>
+                <!-- TEXT PART ENDS -->
+
+                <!-- FORM -->
+                <div class="contactUs_form">
+                    <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/v2.js"></script>
+                <script>
+                    hbspt.forms.create({
+                    region: "eu1",
+                    portalId: "25227429",
+                    formId: "689f61b4-5f54-4fd9-bfa2-fe8673678f1d"
+                    });
+                </script>
                 
-                <div class="form-row first-row">
-                    <div class="form-group">
-                        <input  class="input-data" inputmode="text" id="last-name" type="text"  required>
-                        <label   class="f-ctrl-label"  for="last-name">Nom</label>
-                        <i class="material-dsgn-bar" ></i>
-                    </div>
-                    <div class="form-group">
-                        <input  class="input-data" inputmode="text" id="first-name" type="text"  required>
-                        <label  class="f-ctrl-label" for="first-name">Prénom</label>
-                        <i class="material-dsgn-bar" ></i>
-                    </div>
                 </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <input class="input-data" inputmode="text" id="contact-company-name" type="text"  required>
-                        <label  class="f-ctrl-label"  for="contact-company-name">Entreprise</label>
-                        <i class="material-dsgn-bar" ></i>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <input class="input-data" inputmode="email" id="contact-email" type="email"  required>
-                        <label  class="f-ctrl-label" for="contact-email">E-mail</label>
-                        <i class="material-dsgn-bar" ></i>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <input class="input-data" inputmode="numeric" id="contact-tel" type="tel"  required>
-                        <label class="f-ctrl-label" for="contact-tel">Téléphone</label>
-                        <i class="material-dsgn-bar" ></i>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group">
-                        <textarea name="contact-textarea" class="contact-textarea"></textarea>
-                        <label class="f-ctrl-label" for="contact-textarea">Commentaires</label>
-                        <i class="material-dsgn-bar" ></i>
-                    </div>
-                </div>
-            </form>
-            <div class="form-btn-container">
-                <button class="ct-form-btn" type="button">
-                    <span>Envoyer</span>
-                </button>
+                <!-- FORM ENDS -->
             </div>
-            -->
+            <!-- MAIN CONTENT ENDS -->
 
-            <script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/v2.js"></script>
-            <script>
-                hbspt.forms.create({
-	            region: "eu1",
-	            portalId: "25227429",
-	            formId: "689f61b4-5f54-4fd9-bfa2-fe8673678f1d"
-                });
-            </script>
+            <!-- BOTTOM PART -->
+
+            <div class="contactPage_socialNetworks">
+                    <div class="cell">
+                        <i class="fa-solid fa-square-phone"></i>
+                        <div>+33 01 84 25 37 63</div>
+                    </div>
+                    <div class="cell">
+                        <i class="fa-solid fa-at"></i>
+                        <div>hello@hoccarre.com</div>
+                    </div>
+                    <div class="cell">
+                        <i class="fa-brands fa-facebook" onclick="windows.location.href=''"></i>
+                        <div>Facebook</div>
+                    </div>
+                    <div class="cell">
+                        <i class="fa-brands fa-instagram" onclick="windows.location.href=''"></i>
+                        <div>Instagram</div>
+                    </div>
+                    <div class="cell">
+                        <i class="fa-brands fa-twitter" onclick="windows.location.href=''"></i>
+                        <div>Twitter</div>
+                    </div>
+                    <div class="cell">
+                        <i class="fa-brands fa-linkedin" onclick="windows.location.href=''"></i>
+                        <div>Linkedin</div>
+                    </div>
+            </div>
+
+            <!-- BOTTOM PART ENDS -->
+
+            
         </div>
-        <!-- CONTACT FORM ENDS -->
-    </div>
-    <script src="/distribution/js/script.js"></script>
+        <!-- GLOBAL CONTAINER END -->
 
-</body>
+        <script type="text/javascript" src="/distribution/js/script.js"></script>
+    </body>
 </html>
